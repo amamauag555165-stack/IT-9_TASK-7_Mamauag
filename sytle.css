@@ -1,0 +1,303 @@
+body{
+    max-width: 790px;
+    margin: auto;
+    background-color: rgb(248, 245, 245);
+    font-family: Arial, sans-serif;
+}
+
+.firstcard{
+    display: flex;
+    align-items: top;
+    border: 0.5px;
+    background-color: white;
+    margin: 20px;
+    border-radius: 20px;
+    height: 220px;
+    box-shadow: 0px 0px 1px;
+}   
+
+.profpic {
+    max-width: 170px;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.textcard1{
+    line-height: 0.5;
+}
+
+.textcard1 h5{
+    color: gray;
+}
+
+.firstcard img{
+    border-radius: 30px;
+    padding: 20px;
+}
+
+.button_1{
+    margin-top: 50px;
+}
+
+.button_1 button{
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    gap: 20px;  
+    padding: 10px;
+    margin: 3px;
+    height: 35px;
+    transition: all 0.3s ease;
+}
+
+.button_1 button:hover{
+    border-color: #000;
+    background-color: #f8f8f8;
+    transform: translateY(-2px); 
+}
+
+.secondcard{
+    border: 0.5px;
+    background-color: white;
+    margin: 20px;
+    border-radius: 20px;
+    height: 220px;
+    width: 750px;
+    box-shadow: 0px 0px 1px;
+}
+
+.textcard2{
+    margin-left: 30px;
+    padding: 5px;
+}
+
+.textcard2 h5{
+    color: gray;
+}
+
+.thirdcard{
+    display: flex;
+    align-items: top;
+    border: 0.5px;
+    background-color: white;
+    margin: 20px;
+    border-radius: 20px;
+    height: 220px;
+    width: 750px;
+    box-shadow: 0px 0px 1px;
+}   
+
+.skill-badge {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    transition: all 0.3s ease;
+}
+
+.skill-badge:hover {
+    border-color: #000;
+    background-color: #f8f8f8;
+    transform: translateY(-2px); 
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 12px;       
+    margin-top: 15px;
+}
+
+.textcard3{
+    margin-left: 30px;
+    padding: 5px;
+}
+
+.fourthcard{
+    display: flex;
+    align-items: flex-start;
+    border: 0.5px;
+    background-color: white;
+    margin: 20px;
+    border-radius: 20px;
+    height: 320px;
+    width: 750px;
+    box-shadow: 0px 0px 1px;
+}
+
+.textcard4{
+    margin-left: 30px;
+    padding: 5px;
+}
+
+.textcard4 h4,
+.textcard4 h5 {
+    margin: 5px 0;   
+}
+
+.textcard4 h5{
+    color: gray;
+}
+
+.fifthcard{
+    display: flex;
+    align-items: top;
+    border: 0.5px;
+    background-color: white;
+    margin: 20px;
+    border-radius: 20px;
+    height: 300px;
+    width: 750px;
+    box-shadow: 0px 0px 1px;
+}
+
+.textcard5{
+    margin-left: 30px;
+    padding: 5px;
+}
+
+.certificate1{
+    width: 680px;
+    height: 80px;
+    border: 2px black;
+    border-radius: 10px;
+    background-color: rgb(248, 245, 245);
+}
+
+.certificate2{
+    width: 680px;
+    height: 80px;
+    border: 2px black;
+    border-radius: 10px;
+    background-color: rgb(248, 245, 245);
+}
+
+.cert-card {
+    display: block;
+    height: 55px;
+    margin: 1px;
+    padding: 12px 16px;
+    background-color: #fafafa;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+
+    text-decoration: none;
+    color: #222;
+    font-size: 14px;
+    font-weight: 500;
+
+    transition: all 0.3s ease;
+}
+
+.cert-card:hover {
+    border-color: #000;
+    background-color: #f8f8f8;
+    transform: translateY(-2px); 
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .firstcard {
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+        text-align: center;
+    }
+
+    .firstcard img {
+        padding: 10px;
+    }
+
+    .textcard1 {
+        line-height: 1.2;
+    }
+
+    .button_1 {
+        margin-top: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .button_1 button {
+        flex: 1 1 45%;
+        margin: 5px;
+    }
+
+    .secondcard, .thirdcard, .fourthcard, .fifthcard {
+        width: 100%;
+        height: auto;
+        margin: 10px;
+    }
+
+    .textcard2, .textcard3, .textcard4, .textcard5 {
+        margin-left: 15px;
+        padding: 10px;
+    }
+
+    .certificate1, .certificate2 {
+        width: 100%;
+        height: auto;
+        min-height: 80px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    .firstcard {
+        margin: 10px;
+        padding: 10px;
+    }
+
+    .profpic {
+        max-width: 120px;
+    }
+
+    .firstcard img {
+        border-radius: 20px;
+        padding: 5px;
+    }
+
+    .textcard1 h1 {
+        font-size: 1.5em;
+    }
+
+    .textcard1 h4 {
+        font-size: 1.1em;
+    }
+
+    .button_1 button {
+        flex: 1 1 100%;
+        height: auto;
+        padding: 8px;
+    }
+
+    .secondcard, .thirdcard, .fourthcard, .fifthcard {
+        margin: 5px;
+        border-radius: 15px;
+    }
+
+    .textcard2 h5, .textcard4 h5 {
+        font-size: 0.9em;
+    }
+
+    .certificate1, .certificate2 {
+        width: calc(100% - 20px);
+        margin: 0 10px;
+    }
+
+    .cert-card {
+        margin: 5px;
+        padding: 8px 10px;
+        font-size: 12px;
+}
+}
